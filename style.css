@@ -4,3 +4,16 @@ body {
 h1 {
   color: white;
 }
+.todo {
+  color: blue;
+}
+.todo.checked {
+  color: grey;
+  text-decoration: line-through;
+}
+.todo.checked button:nth-of-type(2) {
+  background-color: green;
+}
+.todo button:nth-of-type(2) {
+  background-color: red;
+}
