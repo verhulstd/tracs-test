@@ -1,7 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class TodoList extends Component {
-  render() {
-    return <div>Todolist</div>;
-  }
-}
+export default ({ todos }) => (
+  <ul>
+    {todos.map(({ todo, id, checked }) => (
+      <li>
+        {todo} ({id} - {checked.toString()})
+      </li>
+    ))}
+  </ul>
+);
